@@ -2076,12 +2076,18 @@ ace.define(
                 next('S');
                 next('T');
                 return 'POST';
+              case 'A':
+                next('A');
+                next('T');
+                next('C');
+                next('H');
+                return 'PATCH';
               default:
                 error('Unexpected \'' + ch + '\'');
             }
             break;
           default:
-            error('Expected one of GET/POST/PUT/DELETE/HEAD');
+            error('Expected one of GET/POST/PUT/PATCH/DELETE/HEAD');
         }
       },
       value, // Place holder for the value function.
@@ -2215,7 +2221,7 @@ ace.define(
             annotate('error', e.message);
             // snap
             const substring = text.substr(at);
-            const nextMatch = substring.search(/^POST|HEAD|GET|PUT|DELETE/m);
+            const nextMatch = substring.search(/^POST|HEAD|GET|PUT|DELETE|PATCH/m);
             if (nextMatch < 1) return;
             reset(at + nextMatch);
           }
