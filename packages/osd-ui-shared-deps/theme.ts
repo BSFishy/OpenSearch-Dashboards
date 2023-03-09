@@ -43,8 +43,8 @@ export const darkMode = tag.endsWith('dark');
 export let euiLightVars: Theme;
 export let euiDarkVars: Theme;
 if (version === 7) {
-  euiLightVars = require('@elastic/eui/dist/eui_theme_light.json');
-  euiDarkVars = require('@elastic/eui/dist/eui_theme_dark.json');
+  euiLightVars = require('@elastic/eui/dist/eui_theme_pink_elephant.json');
+  euiDarkVars = require('@elastic/eui/dist/eui_theme_pink_elephant.json');
 } else {
   euiLightVars = require('@elastic/eui/dist/eui_theme_amsterdam_light.json');
   euiDarkVars = require('@elastic/eui/dist/eui_theme_amsterdam_dark.json');

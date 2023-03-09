@@ -43,8 +43,8 @@ exports.getWebpackConfig = ({ dev = false } = {}) => ({
   mode: dev ? 'development' : 'production',
   entry: {
     'osd-ui-shared-deps': './entry.js',
-    'osd-ui-shared-deps.v7.dark': ['@elastic/eui/dist/eui_theme_dark.css'],
-    'osd-ui-shared-deps.v7.light': ['@elastic/eui/dist/eui_theme_light.css'],
+    'osd-ui-shared-deps.v7.dark': ['@elastic/eui/dist/eui_theme_pink_elephant.css'],
+    'osd-ui-shared-deps.v7.light': ['@elastic/eui/dist/eui_theme_pink_elephant.css'],
     'osd-ui-shared-deps.v8.dark': ['@elastic/eui/dist/eui_theme_amsterdam_dark.css'],
     'osd-ui-shared-deps.v8.light': ['@elastic/eui/dist/eui_theme_amsterdam_light.css'],
   },
