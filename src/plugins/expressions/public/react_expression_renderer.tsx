@@ -29,12 +29,17 @@
  */
 
 import React, { useRef, useEffect, useState, useLayoutEffect } from 'react';
-import classNames from 'classnames';
 import { Observable, Subscription } from 'rxjs';
 import { filter } from 'rxjs/operators';
 import useShallowCompareEffect from 'react-use/lib/useShallowCompareEffect';
-import { EuiLoadingChart, EuiProgress } from '@elastic/eui';
-import theme from '@elastic/eui/dist/eui_theme_light.json';
+import {
+  EuiLoadingChart,
+  EuiProgress,
+  EuiPanel,
+  EuiFlexGroup,
+  EuiFlexItem,
+  PanelPaddingSize,
+} from '@elastic/eui';
 import { IExpressionLoaderParams, ExpressionRenderError } from './types';
 import { ExpressionAstExpression, IInterpreterRenderHandlers } from '../common';
 import { ExpressionLoader } from './loader';
@@ -50,7 +55,7 @@ export interface ReactExpressionRendererProps extends IExpressionLoaderParams {
     message?: string | null,
     error?: ExpressionRenderError | null
   ) => React.ReactElement | React.ReactElement[];
-  padding?: 'xs' | 's' | 'm' | 'l' | 'xl';
+  padding?: PanelPaddingSize;
   onEvent?: (event: ExpressionRendererEvent) => void;
   /**
    * An observable which can be used to re-run the expression without destroying the component
@@ -184,30 +189,29 @@ export const ReactExpressionRenderer = ({
     }
   }, [state.error]);
 
-  const classes = classNames('expExpressionRenderer', className, {
-    'expExpressionRenderer-isEmpty': state.isEmpty,
-    'expExpressionRenderer-hasError': !!state.error,
-  });
-
-  const expressionStyles: React.CSSProperties = {};
-
-  if (padding) {
-    expressionStyles.padding = theme.paddingSizes[padding];
-  }
-
   return (
-    <div {...dataAttrs} className={classes}>
+    <EuiFlexGroup
+      {...dataAttrs}
+      alignItems="center"
+      justifyContent="center"
+      gutterSize="none"
+      className={className}
+    >
       {state.isEmpty && <EuiLoadingChart mono size="l" />}
       {state.isLoading && <EuiProgress size="xs" color="accent" position="absolute" />}
       {!state.isLoading &&
         state.error &&
         renderError &&
         renderError(state.error.message, state.error)}
-      <div
-        className="expExpressionRenderer__expression"
-        style={expressionStyles}
-        ref={mountpoint}
-      />
-    </div>
+      <EuiFlexItem grow={1}>
+        <EuiPanel
+          paddingSize={padding}
+          hasShadow={false}
+          hasBorder={false}
+          color="transparent"
+          panelRef={mountpoint}
+        />
+      </EuiFlexItem>
+    </EuiFlexGroup>
   );
 };
