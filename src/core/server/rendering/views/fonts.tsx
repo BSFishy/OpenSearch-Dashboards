@@ -50,204 +50,2105 @@ interface FontFace {
 }
 
 export const Fonts: FunctionComponent<Props> = ({ url }) => {
-  const interUi: FontFace = {
-    family: 'Inter UI',
+  const sourceSans3: FontFace = {
+    family: 'Source Sans 3',
     variants: [
       {
-        style: 'normal',
-        weight: 100,
-        sources: [
-          `${url}/fonts/inter_ui/Inter-UI-Thin-BETA.woff2`,
-          `${url}/fonts/inter_ui/Inter-UI-Thin-BETA.woff`,
-        ],
-      },
-      {
         style: 'italic',
-        weight: 100,
-        sources: [
-          `${url}/fonts/inter_ui/Inter-UI-ThinItalic-BETA.woff2`,
-          `${url}/fonts/inter_ui/Inter-UI-ThinItalic-BETA.woff`,
-        ],
-      },
-      {
-        style: 'normal',
         weight: 200,
+        format: 'woff2',
         sources: [
-          `${url}/fonts/inter_ui/Inter-UI-ExtraLight-BETA.woff2`,
-          `${url}/fonts/inter_ui/Inter-UI-ExtraLight-BETA.woff`,
+          'https://fonts.gstatic.com/s/sourcesans3/v9/nwpMtKy2OAdR1K-IwhWudF-R3woqauLYxnN18YRxkHA.woff2',
         ],
+        unicodeRange: 'U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F',
       },
       {
         style: 'italic',
         weight: 200,
+        format: 'woff2',
         sources: [
-          `${url}/fonts/inter_ui/Inter-UI-ExtraLightItalic-BETA.woff2`,
-          `${url}/fonts/inter_ui/Inter-UI-ExtraLightItalic-BETA.woff`,
+          'https://fonts.gstatic.com/s/sourcesans3/v9/nwpMtKy2OAdR1K-IwhWudF-R3woqY-LYxnN18YRxkHA.woff2',
         ],
+        unicodeRange: 'U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116',
       },
       {
-        style: 'normal',
-        weight: 300,
+        style: 'italic',
+        weight: 200,
+        format: 'woff2',
         sources: [
-          `${url}/fonts/inter_ui/Inter-UI-Light-BETA.woff2`,
-          `${url}/fonts/inter_ui/Inter-UI-Light-BETA.woff`,
+          'https://fonts.gstatic.com/s/sourcesans3/v9/nwpMtKy2OAdR1K-IwhWudF-R3woqa-LYxnN18YRxkHA.woff2',
         ],
+        unicodeRange: 'U+1F00-1FFF',
+      },
+      {
+        style: 'italic',
+        weight: 200,
+        format: 'woff2',
+        sources: [
+          'https://fonts.gstatic.com/s/sourcesans3/v9/nwpMtKy2OAdR1K-IwhWudF-R3woqZOLYxnN18YRxkHA.woff2',
+        ],
+        unicodeRange: 'U+0370-03FF',
+      },
+      {
+        style: 'italic',
+        weight: 200,
+        format: 'woff2',
+        sources: [
+          'https://fonts.gstatic.com/s/sourcesans3/v9/nwpMtKy2OAdR1K-IwhWudF-R3woqaOLYxnN18YRxkHA.woff2',
+        ],
+        unicodeRange:
+          'U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB',
+      },
+      {
+        style: 'italic',
+        weight: 200,
+        format: 'woff2',
+        sources: [
+          'https://fonts.gstatic.com/s/sourcesans3/v9/nwpMtKy2OAdR1K-IwhWudF-R3woqaeLYxnN18YRxkHA.woff2',
+        ],
+        unicodeRange:
+          'U+0100-02AF, U+0304, U+0308, U+0329, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF',
+      },
+      {
+        style: 'italic',
+        weight: 200,
+        format: 'woff2',
+        sources: [
+          'https://fonts.gstatic.com/s/sourcesans3/v9/nwpMtKy2OAdR1K-IwhWudF-R3woqZ-LYxnN18YRx.woff2',
+        ],
+        unicodeRange:
+          'U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD',
       },
       {
         style: 'italic',
         weight: 300,
+        format: 'woff2',
         sources: [
-          `${url}/fonts/inter_ui/Inter-UI-LightItalic-BETA.woff2`,
-          `${url}/fonts/inter_ui/Inter-UI-LightItalic-BETA.woff`,
+          'https://fonts.gstatic.com/s/sourcesans3/v9/nwpMtKy2OAdR1K-IwhWudF-R3woqauLYxnN18YRxkHA.woff2',
         ],
+        unicodeRange: 'U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F',
       },
       {
-        style: 'normal',
-        weight: 400,
+        style: 'italic',
+        weight: 300,
+        format: 'woff2',
         sources: [
-          `${url}/fonts/inter_ui/Inter-UI-Regular.woff2`,
-          `${url}/fonts/inter_ui/Inter-UI-Regular.woff`,
+          'https://fonts.gstatic.com/s/sourcesans3/v9/nwpMtKy2OAdR1K-IwhWudF-R3woqY-LYxnN18YRxkHA.woff2',
         ],
+        unicodeRange: 'U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116',
+      },
+      {
+        style: 'italic',
+        weight: 300,
+        format: 'woff2',
+        sources: [
+          'https://fonts.gstatic.com/s/sourcesans3/v9/nwpMtKy2OAdR1K-IwhWudF-R3woqa-LYxnN18YRxkHA.woff2',
+        ],
+        unicodeRange: 'U+1F00-1FFF',
+      },
+      {
+        style: 'italic',
+        weight: 300,
+        format: 'woff2',
+        sources: [
+          'https://fonts.gstatic.com/s/sourcesans3/v9/nwpMtKy2OAdR1K-IwhWudF-R3woqZOLYxnN18YRxkHA.woff2',
+        ],
+        unicodeRange: 'U+0370-03FF',
+      },
+      {
+        style: 'italic',
+        weight: 300,
+        format: 'woff2',
+        sources: [
+          'https://fonts.gstatic.com/s/sourcesans3/v9/nwpMtKy2OAdR1K-IwhWudF-R3woqaOLYxnN18YRxkHA.woff2',
+        ],
+        unicodeRange:
+          'U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB',
+      },
+      {
+        style: 'italic',
+        weight: 300,
+        format: 'woff2',
+        sources: [
+          'https://fonts.gstatic.com/s/sourcesans3/v9/nwpMtKy2OAdR1K-IwhWudF-R3woqaeLYxnN18YRxkHA.woff2',
+        ],
+        unicodeRange:
+          'U+0100-02AF, U+0304, U+0308, U+0329, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF',
+      },
+      {
+        style: 'italic',
+        weight: 300,
+        format: 'woff2',
+        sources: [
+          'https://fonts.gstatic.com/s/sourcesans3/v9/nwpMtKy2OAdR1K-IwhWudF-R3woqZ-LYxnN18YRx.woff2',
+        ],
+        unicodeRange:
+          'U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD',
       },
       {
         style: 'italic',
         weight: 400,
+        format: 'woff2',
         sources: [
-          `${url}/fonts/inter_ui/Inter-UI-Italic.woff2`,
-          `${url}/fonts/inter_ui/Inter-UI-Italic.woff`,
+          'https://fonts.gstatic.com/s/sourcesans3/v9/nwpMtKy2OAdR1K-IwhWudF-R3woqauLYxnN18YRxkHA.woff2',
         ],
+        unicodeRange: 'U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F',
       },
       {
-        style: 'normal',
-        weight: 500,
+        style: 'italic',
+        weight: 400,
+        format: 'woff2',
         sources: [
-          `${url}/fonts/inter_ui/Inter-UI-Medium.woff2`,
-          `${url}/fonts/inter_ui/Inter-UI-Medium.woff`,
+          'https://fonts.gstatic.com/s/sourcesans3/v9/nwpMtKy2OAdR1K-IwhWudF-R3woqY-LYxnN18YRxkHA.woff2',
         ],
+        unicodeRange: 'U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116',
+      },
+      {
+        style: 'italic',
+        weight: 400,
+        format: 'woff2',
+        sources: [
+          'https://fonts.gstatic.com/s/sourcesans3/v9/nwpMtKy2OAdR1K-IwhWudF-R3woqa-LYxnN18YRxkHA.woff2',
+        ],
+        unicodeRange: 'U+1F00-1FFF',
+      },
+      {
+        style: 'italic',
+        weight: 400,
+        format: 'woff2',
+        sources: [
+          'https://fonts.gstatic.com/s/sourcesans3/v9/nwpMtKy2OAdR1K-IwhWudF-R3woqZOLYxnN18YRxkHA.woff2',
+        ],
+        unicodeRange: 'U+0370-03FF',
+      },
+      {
+        style: 'italic',
+        weight: 400,
+        format: 'woff2',
+        sources: [
+          'https://fonts.gstatic.com/s/sourcesans3/v9/nwpMtKy2OAdR1K-IwhWudF-R3woqaOLYxnN18YRxkHA.woff2',
+        ],
+        unicodeRange:
+          'U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB',
+      },
+      {
+        style: 'italic',
+        weight: 400,
+        format: 'woff2',
+        sources: [
+          'https://fonts.gstatic.com/s/sourcesans3/v9/nwpMtKy2OAdR1K-IwhWudF-R3woqaeLYxnN18YRxkHA.woff2',
+        ],
+        unicodeRange:
+          'U+0100-02AF, U+0304, U+0308, U+0329, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF',
+      },
+      {
+        style: 'italic',
+        weight: 400,
+        format: 'woff2',
+        sources: [
+          'https://fonts.gstatic.com/s/sourcesans3/v9/nwpMtKy2OAdR1K-IwhWudF-R3woqZ-LYxnN18YRx.woff2',
+        ],
+        unicodeRange:
+          'U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD',
       },
       {
         style: 'italic',
         weight: 500,
+        format: 'woff2',
         sources: [
-          `${url}/fonts/inter_ui/Inter-UI-MediumItalic.woff2`,
-          `${url}/fonts/inter_ui/Inter-UI-MediumItalic.woff`,
+          'https://fonts.gstatic.com/s/sourcesans3/v9/nwpMtKy2OAdR1K-IwhWudF-R3woqauLYxnN18YRxkHA.woff2',
         ],
+        unicodeRange: 'U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F',
       },
       {
-        style: 'normal',
-        weight: 600,
+        style: 'italic',
+        weight: 500,
+        format: 'woff2',
         sources: [
-          `${url}/fonts/inter_ui/Inter-UI-SemiBold.woff2`,
-          `${url}/fonts/inter_ui/Inter-UI-SemiBold.woff`,
+          'https://fonts.gstatic.com/s/sourcesans3/v9/nwpMtKy2OAdR1K-IwhWudF-R3woqY-LYxnN18YRxkHA.woff2',
         ],
+        unicodeRange: 'U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116',
+      },
+      {
+        style: 'italic',
+        weight: 500,
+        format: 'woff2',
+        sources: [
+          'https://fonts.gstatic.com/s/sourcesans3/v9/nwpMtKy2OAdR1K-IwhWudF-R3woqa-LYxnN18YRxkHA.woff2',
+        ],
+        unicodeRange: 'U+1F00-1FFF',
+      },
+      {
+        style: 'italic',
+        weight: 500,
+        format: 'woff2',
+        sources: [
+          'https://fonts.gstatic.com/s/sourcesans3/v9/nwpMtKy2OAdR1K-IwhWudF-R3woqZOLYxnN18YRxkHA.woff2',
+        ],
+        unicodeRange: 'U+0370-03FF',
+      },
+      {
+        style: 'italic',
+        weight: 500,
+        format: 'woff2',
+        sources: [
+          'https://fonts.gstatic.com/s/sourcesans3/v9/nwpMtKy2OAdR1K-IwhWudF-R3woqaOLYxnN18YRxkHA.woff2',
+        ],
+        unicodeRange:
+          'U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB',
+      },
+      {
+        style: 'italic',
+        weight: 500,
+        format: 'woff2',
+        sources: [
+          'https://fonts.gstatic.com/s/sourcesans3/v9/nwpMtKy2OAdR1K-IwhWudF-R3woqaeLYxnN18YRxkHA.woff2',
+        ],
+        unicodeRange:
+          'U+0100-02AF, U+0304, U+0308, U+0329, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF',
+      },
+      {
+        style: 'italic',
+        weight: 500,
+        format: 'woff2',
+        sources: [
+          'https://fonts.gstatic.com/s/sourcesans3/v9/nwpMtKy2OAdR1K-IwhWudF-R3woqZ-LYxnN18YRx.woff2',
+        ],
+        unicodeRange:
+          'U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD',
       },
       {
         style: 'italic',
         weight: 600,
+        format: 'woff2',
         sources: [
-          `${url}/fonts/inter_ui/Inter-UI-SemiBoldItalic.woff2`,
-          `${url}/fonts/inter_ui/Inter-UI-SemiBoldItalic.woff`,
+          'https://fonts.gstatic.com/s/sourcesans3/v9/nwpMtKy2OAdR1K-IwhWudF-R3woqauLYxnN18YRxkHA.woff2',
         ],
+        unicodeRange: 'U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F',
       },
       {
-        style: 'normal',
-        weight: 700,
+        style: 'italic',
+        weight: 600,
+        format: 'woff2',
         sources: [
-          `${url}/fonts/inter_ui/Inter-UI-Bold.woff2`,
-          `${url}/fonts/inter_ui/Inter-UI-Bold.woff`,
+          'https://fonts.gstatic.com/s/sourcesans3/v9/nwpMtKy2OAdR1K-IwhWudF-R3woqY-LYxnN18YRxkHA.woff2',
         ],
+        unicodeRange: 'U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116',
+      },
+      {
+        style: 'italic',
+        weight: 600,
+        format: 'woff2',
+        sources: [
+          'https://fonts.gstatic.com/s/sourcesans3/v9/nwpMtKy2OAdR1K-IwhWudF-R3woqa-LYxnN18YRxkHA.woff2',
+        ],
+        unicodeRange: 'U+1F00-1FFF',
+      },
+      {
+        style: 'italic',
+        weight: 600,
+        format: 'woff2',
+        sources: [
+          'https://fonts.gstatic.com/s/sourcesans3/v9/nwpMtKy2OAdR1K-IwhWudF-R3woqZOLYxnN18YRxkHA.woff2',
+        ],
+        unicodeRange: 'U+0370-03FF',
+      },
+      {
+        style: 'italic',
+        weight: 600,
+        format: 'woff2',
+        sources: [
+          'https://fonts.gstatic.com/s/sourcesans3/v9/nwpMtKy2OAdR1K-IwhWudF-R3woqaOLYxnN18YRxkHA.woff2',
+        ],
+        unicodeRange:
+          'U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB',
+      },
+      {
+        style: 'italic',
+        weight: 600,
+        format: 'woff2',
+        sources: [
+          'https://fonts.gstatic.com/s/sourcesans3/v9/nwpMtKy2OAdR1K-IwhWudF-R3woqaeLYxnN18YRxkHA.woff2',
+        ],
+        unicodeRange:
+          'U+0100-02AF, U+0304, U+0308, U+0329, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF',
+      },
+      {
+        style: 'italic',
+        weight: 600,
+        format: 'woff2',
+        sources: [
+          'https://fonts.gstatic.com/s/sourcesans3/v9/nwpMtKy2OAdR1K-IwhWudF-R3woqZ-LYxnN18YRx.woff2',
+        ],
+        unicodeRange:
+          'U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD',
       },
       {
         style: 'italic',
         weight: 700,
+        format: 'woff2',
         sources: [
-          `${url}/fonts/inter_ui/Inter-UI-BoldItalic.woff2`,
-          `${url}/fonts/inter_ui/Inter-UI-BoldItalic.woff`,
+          'https://fonts.gstatic.com/s/sourcesans3/v9/nwpMtKy2OAdR1K-IwhWudF-R3woqauLYxnN18YRxkHA.woff2',
         ],
+        unicodeRange: 'U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F',
       },
       {
-        style: 'normal',
-        weight: 800,
+        style: 'italic',
+        weight: 700,
+        format: 'woff2',
         sources: [
-          `${url}/fonts/inter_ui/Inter-UI-ExtraBold.woff2`,
-          `${url}/fonts/inter_ui/Inter-UI-ExtraBold.woff`,
+          'https://fonts.gstatic.com/s/sourcesans3/v9/nwpMtKy2OAdR1K-IwhWudF-R3woqY-LYxnN18YRxkHA.woff2',
         ],
+        unicodeRange: 'U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116',
+      },
+      {
+        style: 'italic',
+        weight: 700,
+        format: 'woff2',
+        sources: [
+          'https://fonts.gstatic.com/s/sourcesans3/v9/nwpMtKy2OAdR1K-IwhWudF-R3woqa-LYxnN18YRxkHA.woff2',
+        ],
+        unicodeRange: 'U+1F00-1FFF',
+      },
+      {
+        style: 'italic',
+        weight: 700,
+        format: 'woff2',
+        sources: [
+          'https://fonts.gstatic.com/s/sourcesans3/v9/nwpMtKy2OAdR1K-IwhWudF-R3woqZOLYxnN18YRxkHA.woff2',
+        ],
+        unicodeRange: 'U+0370-03FF',
+      },
+      {
+        style: 'italic',
+        weight: 700,
+        format: 'woff2',
+        sources: [
+          'https://fonts.gstatic.com/s/sourcesans3/v9/nwpMtKy2OAdR1K-IwhWudF-R3woqaOLYxnN18YRxkHA.woff2',
+        ],
+        unicodeRange:
+          'U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB',
+      },
+      {
+        style: 'italic',
+        weight: 700,
+        format: 'woff2',
+        sources: [
+          'https://fonts.gstatic.com/s/sourcesans3/v9/nwpMtKy2OAdR1K-IwhWudF-R3woqaeLYxnN18YRxkHA.woff2',
+        ],
+        unicodeRange:
+          'U+0100-02AF, U+0304, U+0308, U+0329, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF',
+      },
+      {
+        style: 'italic',
+        weight: 700,
+        format: 'woff2',
+        sources: [
+          'https://fonts.gstatic.com/s/sourcesans3/v9/nwpMtKy2OAdR1K-IwhWudF-R3woqZ-LYxnN18YRx.woff2',
+        ],
+        unicodeRange:
+          'U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD',
       },
       {
         style: 'italic',
         weight: 800,
+        format: 'woff2',
         sources: [
-          `${url}/fonts/inter_ui/Inter-UI-ExtraBoldItalic.woff2`,
-          `${url}/fonts/inter_ui/Inter-UI-ExtraBoldItalic.woff`,
+          'https://fonts.gstatic.com/s/sourcesans3/v9/nwpMtKy2OAdR1K-IwhWudF-R3woqauLYxnN18YRxkHA.woff2',
         ],
+        unicodeRange: 'U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F',
       },
       {
-        style: 'normal',
-        weight: 900,
+        style: 'italic',
+        weight: 800,
+        format: 'woff2',
         sources: [
-          `${url}/fonts/inter_ui/Inter-UI-Black.woff2`,
-          `${url}/fonts/inter_ui/Inter-UI-Black.woff`,
+          'https://fonts.gstatic.com/s/sourcesans3/v9/nwpMtKy2OAdR1K-IwhWudF-R3woqY-LYxnN18YRxkHA.woff2',
         ],
+        unicodeRange: 'U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116',
+      },
+      {
+        style: 'italic',
+        weight: 800,
+        format: 'woff2',
+        sources: [
+          'https://fonts.gstatic.com/s/sourcesans3/v9/nwpMtKy2OAdR1K-IwhWudF-R3woqa-LYxnN18YRxkHA.woff2',
+        ],
+        unicodeRange: 'U+1F00-1FFF',
+      },
+      {
+        style: 'italic',
+        weight: 800,
+        format: 'woff2',
+        sources: [
+          'https://fonts.gstatic.com/s/sourcesans3/v9/nwpMtKy2OAdR1K-IwhWudF-R3woqZOLYxnN18YRxkHA.woff2',
+        ],
+        unicodeRange: 'U+0370-03FF',
+      },
+      {
+        style: 'italic',
+        weight: 800,
+        format: 'woff2',
+        sources: [
+          'https://fonts.gstatic.com/s/sourcesans3/v9/nwpMtKy2OAdR1K-IwhWudF-R3woqaOLYxnN18YRxkHA.woff2',
+        ],
+        unicodeRange:
+          'U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB',
+      },
+      {
+        style: 'italic',
+        weight: 800,
+        format: 'woff2',
+        sources: [
+          'https://fonts.gstatic.com/s/sourcesans3/v9/nwpMtKy2OAdR1K-IwhWudF-R3woqaeLYxnN18YRxkHA.woff2',
+        ],
+        unicodeRange:
+          'U+0100-02AF, U+0304, U+0308, U+0329, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF',
+      },
+      {
+        style: 'italic',
+        weight: 800,
+        format: 'woff2',
+        sources: [
+          'https://fonts.gstatic.com/s/sourcesans3/v9/nwpMtKy2OAdR1K-IwhWudF-R3woqZ-LYxnN18YRx.woff2',
+        ],
+        unicodeRange:
+          'U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD',
       },
       {
         style: 'italic',
         weight: 900,
+        format: 'woff2',
         sources: [
-          `${url}/fonts/inter_ui/Inter-UI-BlackItalic.woff2`,
-          `${url}/fonts/inter_ui/Inter-UI-BlackItalic.woff`,
+          'https://fonts.gstatic.com/s/sourcesans3/v9/nwpMtKy2OAdR1K-IwhWudF-R3woqauLYxnN18YRxkHA.woff2',
         ],
+        unicodeRange: 'U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F',
+      },
+      {
+        style: 'italic',
+        weight: 900,
+        format: 'woff2',
+        sources: [
+          'https://fonts.gstatic.com/s/sourcesans3/v9/nwpMtKy2OAdR1K-IwhWudF-R3woqY-LYxnN18YRxkHA.woff2',
+        ],
+        unicodeRange: 'U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116',
+      },
+      {
+        style: 'italic',
+        weight: 900,
+        format: 'woff2',
+        sources: [
+          'https://fonts.gstatic.com/s/sourcesans3/v9/nwpMtKy2OAdR1K-IwhWudF-R3woqa-LYxnN18YRxkHA.woff2',
+        ],
+        unicodeRange: 'U+1F00-1FFF',
+      },
+      {
+        style: 'italic',
+        weight: 900,
+        format: 'woff2',
+        sources: [
+          'https://fonts.gstatic.com/s/sourcesans3/v9/nwpMtKy2OAdR1K-IwhWudF-R3woqZOLYxnN18YRxkHA.woff2',
+        ],
+        unicodeRange: 'U+0370-03FF',
+      },
+      {
+        style: 'italic',
+        weight: 900,
+        format: 'woff2',
+        sources: [
+          'https://fonts.gstatic.com/s/sourcesans3/v9/nwpMtKy2OAdR1K-IwhWudF-R3woqaOLYxnN18YRxkHA.woff2',
+        ],
+        unicodeRange:
+          'U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB',
+      },
+      {
+        style: 'italic',
+        weight: 900,
+        format: 'woff2',
+        sources: [
+          'https://fonts.gstatic.com/s/sourcesans3/v9/nwpMtKy2OAdR1K-IwhWudF-R3woqaeLYxnN18YRxkHA.woff2',
+        ],
+        unicodeRange:
+          'U+0100-02AF, U+0304, U+0308, U+0329, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF',
+      },
+      {
+        style: 'italic',
+        weight: 900,
+        format: 'woff2',
+        sources: [
+          'https://fonts.gstatic.com/s/sourcesans3/v9/nwpMtKy2OAdR1K-IwhWudF-R3woqZ-LYxnN18YRx.woff2',
+        ],
+        unicodeRange:
+          'U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD',
+      },
+      {
+        style: 'normal',
+        weight: 200,
+        format: 'woff2',
+        sources: [
+          'https://fonts.gstatic.com/s/sourcesans3/v9/nwpStKy2OAdR1K-IwhWudF-R3wIaZejZ5HZV8ZRx.woff2',
+        ],
+        unicodeRange: 'U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F',
+      },
+      {
+        style: 'normal',
+        weight: 200,
+        format: 'woff2',
+        sources: [
+          'https://fonts.gstatic.com/s/sourcesans3/v9/nwpStKy2OAdR1K-IwhWudF-R3wsaZejZ5HZV8ZRx.woff2',
+        ],
+        unicodeRange: 'U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116',
+      },
+      {
+        style: 'normal',
+        weight: 200,
+        format: 'woff2',
+        sources: [
+          'https://fonts.gstatic.com/s/sourcesans3/v9/nwpStKy2OAdR1K-IwhWudF-R3wMaZejZ5HZV8ZRx.woff2',
+        ],
+        unicodeRange: 'U+1F00-1FFF',
+      },
+      {
+        style: 'normal',
+        weight: 200,
+        format: 'woff2',
+        sources: [
+          'https://fonts.gstatic.com/s/sourcesans3/v9/nwpStKy2OAdR1K-IwhWudF-R3wwaZejZ5HZV8ZRx.woff2',
+        ],
+        unicodeRange: 'U+0370-03FF',
+      },
+      {
+        style: 'normal',
+        weight: 200,
+        format: 'woff2',
+        sources: [
+          'https://fonts.gstatic.com/s/sourcesans3/v9/nwpStKy2OAdR1K-IwhWudF-R3wAaZejZ5HZV8ZRx.woff2',
+        ],
+        unicodeRange:
+          'U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB',
+      },
+      {
+        style: 'normal',
+        weight: 200,
+        format: 'woff2',
+        sources: [
+          'https://fonts.gstatic.com/s/sourcesans3/v9/nwpStKy2OAdR1K-IwhWudF-R3wEaZejZ5HZV8ZRx.woff2',
+        ],
+        unicodeRange:
+          'U+0100-02AF, U+0304, U+0308, U+0329, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF',
+      },
+      {
+        style: 'normal',
+        weight: 200,
+        format: 'woff2',
+        sources: [
+          'https://fonts.gstatic.com/s/sourcesans3/v9/nwpStKy2OAdR1K-IwhWudF-R3w8aZejZ5HZV8Q.woff2',
+        ],
+        unicodeRange:
+          'U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD',
+      },
+      {
+        style: 'normal',
+        weight: 300,
+        format: 'woff2',
+        sources: [
+          'https://fonts.gstatic.com/s/sourcesans3/v9/nwpStKy2OAdR1K-IwhWudF-R3wIaZejZ5HZV8ZRx.woff2',
+        ],
+        unicodeRange: 'U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F',
+      },
+      {
+        style: 'normal',
+        weight: 300,
+        format: 'woff2',
+        sources: [
+          'https://fonts.gstatic.com/s/sourcesans3/v9/nwpStKy2OAdR1K-IwhWudF-R3wsaZejZ5HZV8ZRx.woff2',
+        ],
+        unicodeRange: 'U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116',
+      },
+      {
+        style: 'normal',
+        weight: 300,
+        format: 'woff2',
+        sources: [
+          'https://fonts.gstatic.com/s/sourcesans3/v9/nwpStKy2OAdR1K-IwhWudF-R3wMaZejZ5HZV8ZRx.woff2',
+        ],
+        unicodeRange: 'U+1F00-1FFF',
+      },
+      {
+        style: 'normal',
+        weight: 300,
+        format: 'woff2',
+        sources: [
+          'https://fonts.gstatic.com/s/sourcesans3/v9/nwpStKy2OAdR1K-IwhWudF-R3wwaZejZ5HZV8ZRx.woff2',
+        ],
+        unicodeRange: 'U+0370-03FF',
+      },
+      {
+        style: 'normal',
+        weight: 300,
+        format: 'woff2',
+        sources: [
+          'https://fonts.gstatic.com/s/sourcesans3/v9/nwpStKy2OAdR1K-IwhWudF-R3wAaZejZ5HZV8ZRx.woff2',
+        ],
+        unicodeRange:
+          'U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB',
+      },
+      {
+        style: 'normal',
+        weight: 300,
+        format: 'woff2',
+        sources: [
+          'https://fonts.gstatic.com/s/sourcesans3/v9/nwpStKy2OAdR1K-IwhWudF-R3wEaZejZ5HZV8ZRx.woff2',
+        ],
+        unicodeRange:
+          'U+0100-02AF, U+0304, U+0308, U+0329, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF',
+      },
+      {
+        style: 'normal',
+        weight: 300,
+        format: 'woff2',
+        sources: [
+          'https://fonts.gstatic.com/s/sourcesans3/v9/nwpStKy2OAdR1K-IwhWudF-R3w8aZejZ5HZV8Q.woff2',
+        ],
+        unicodeRange:
+          'U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD',
+      },
+      {
+        style: 'normal',
+        weight: 400,
+        format: 'woff2',
+        sources: [
+          'https://fonts.gstatic.com/s/sourcesans3/v9/nwpStKy2OAdR1K-IwhWudF-R3wIaZejZ5HZV8ZRx.woff2',
+        ],
+        unicodeRange: 'U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F',
+      },
+      {
+        style: 'normal',
+        weight: 400,
+        format: 'woff2',
+        sources: [
+          'https://fonts.gstatic.com/s/sourcesans3/v9/nwpStKy2OAdR1K-IwhWudF-R3wsaZejZ5HZV8ZRx.woff2',
+        ],
+        unicodeRange: 'U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116',
+      },
+      {
+        style: 'normal',
+        weight: 400,
+        format: 'woff2',
+        sources: [
+          'https://fonts.gstatic.com/s/sourcesans3/v9/nwpStKy2OAdR1K-IwhWudF-R3wMaZejZ5HZV8ZRx.woff2',
+        ],
+        unicodeRange: 'U+1F00-1FFF',
+      },
+      {
+        style: 'normal',
+        weight: 400,
+        format: 'woff2',
+        sources: [
+          'https://fonts.gstatic.com/s/sourcesans3/v9/nwpStKy2OAdR1K-IwhWudF-R3wwaZejZ5HZV8ZRx.woff2',
+        ],
+        unicodeRange: 'U+0370-03FF',
+      },
+      {
+        style: 'normal',
+        weight: 400,
+        format: 'woff2',
+        sources: [
+          'https://fonts.gstatic.com/s/sourcesans3/v9/nwpStKy2OAdR1K-IwhWudF-R3wAaZejZ5HZV8ZRx.woff2',
+        ],
+        unicodeRange:
+          'U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB',
+      },
+      {
+        style: 'normal',
+        weight: 400,
+        format: 'woff2',
+        sources: [
+          'https://fonts.gstatic.com/s/sourcesans3/v9/nwpStKy2OAdR1K-IwhWudF-R3wEaZejZ5HZV8ZRx.woff2',
+        ],
+        unicodeRange:
+          'U+0100-02AF, U+0304, U+0308, U+0329, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF',
+      },
+      {
+        style: 'normal',
+        weight: 400,
+        format: 'woff2',
+        sources: [
+          'https://fonts.gstatic.com/s/sourcesans3/v9/nwpStKy2OAdR1K-IwhWudF-R3w8aZejZ5HZV8Q.woff2',
+        ],
+        unicodeRange:
+          'U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD',
+      },
+      {
+        style: 'normal',
+        weight: 500,
+        format: 'woff2',
+        sources: [
+          'https://fonts.gstatic.com/s/sourcesans3/v9/nwpStKy2OAdR1K-IwhWudF-R3wIaZejZ5HZV8ZRx.woff2',
+        ],
+        unicodeRange: 'U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F',
+      },
+      {
+        style: 'normal',
+        weight: 500,
+        format: 'woff2',
+        sources: [
+          'https://fonts.gstatic.com/s/sourcesans3/v9/nwpStKy2OAdR1K-IwhWudF-R3wsaZejZ5HZV8ZRx.woff2',
+        ],
+        unicodeRange: 'U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116',
+      },
+      {
+        style: 'normal',
+        weight: 500,
+        format: 'woff2',
+        sources: [
+          'https://fonts.gstatic.com/s/sourcesans3/v9/nwpStKy2OAdR1K-IwhWudF-R3wMaZejZ5HZV8ZRx.woff2',
+        ],
+        unicodeRange: 'U+1F00-1FFF',
+      },
+      {
+        style: 'normal',
+        weight: 500,
+        format: 'woff2',
+        sources: [
+          'https://fonts.gstatic.com/s/sourcesans3/v9/nwpStKy2OAdR1K-IwhWudF-R3wwaZejZ5HZV8ZRx.woff2',
+        ],
+        unicodeRange: 'U+0370-03FF',
+      },
+      {
+        style: 'normal',
+        weight: 500,
+        format: 'woff2',
+        sources: [
+          'https://fonts.gstatic.com/s/sourcesans3/v9/nwpStKy2OAdR1K-IwhWudF-R3wAaZejZ5HZV8ZRx.woff2',
+        ],
+        unicodeRange:
+          'U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB',
+      },
+      {
+        style: 'normal',
+        weight: 500,
+        format: 'woff2',
+        sources: [
+          'https://fonts.gstatic.com/s/sourcesans3/v9/nwpStKy2OAdR1K-IwhWudF-R3wEaZejZ5HZV8ZRx.woff2',
+        ],
+        unicodeRange:
+          'U+0100-02AF, U+0304, U+0308, U+0329, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF',
+      },
+      {
+        style: 'normal',
+        weight: 500,
+        format: 'woff2',
+        sources: [
+          'https://fonts.gstatic.com/s/sourcesans3/v9/nwpStKy2OAdR1K-IwhWudF-R3w8aZejZ5HZV8Q.woff2',
+        ],
+        unicodeRange:
+          'U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD',
+      },
+      {
+        style: 'normal',
+        weight: 600,
+        format: 'woff2',
+        sources: [
+          'https://fonts.gstatic.com/s/sourcesans3/v9/nwpStKy2OAdR1K-IwhWudF-R3wIaZejZ5HZV8ZRx.woff2',
+        ],
+        unicodeRange: 'U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F',
+      },
+      {
+        style: 'normal',
+        weight: 600,
+        format: 'woff2',
+        sources: [
+          'https://fonts.gstatic.com/s/sourcesans3/v9/nwpStKy2OAdR1K-IwhWudF-R3wsaZejZ5HZV8ZRx.woff2',
+        ],
+        unicodeRange: 'U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116',
+      },
+      {
+        style: 'normal',
+        weight: 600,
+        format: 'woff2',
+        sources: [
+          'https://fonts.gstatic.com/s/sourcesans3/v9/nwpStKy2OAdR1K-IwhWudF-R3wMaZejZ5HZV8ZRx.woff2',
+        ],
+        unicodeRange: 'U+1F00-1FFF',
+      },
+      {
+        style: 'normal',
+        weight: 600,
+        format: 'woff2',
+        sources: [
+          'https://fonts.gstatic.com/s/sourcesans3/v9/nwpStKy2OAdR1K-IwhWudF-R3wwaZejZ5HZV8ZRx.woff2',
+        ],
+        unicodeRange: 'U+0370-03FF',
+      },
+      {
+        style: 'normal',
+        weight: 600,
+        format: 'woff2',
+        sources: [
+          'https://fonts.gstatic.com/s/sourcesans3/v9/nwpStKy2OAdR1K-IwhWudF-R3wAaZejZ5HZV8ZRx.woff2',
+        ],
+        unicodeRange:
+          'U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB',
+      },
+      {
+        style: 'normal',
+        weight: 600,
+        format: 'woff2',
+        sources: [
+          'https://fonts.gstatic.com/s/sourcesans3/v9/nwpStKy2OAdR1K-IwhWudF-R3wEaZejZ5HZV8ZRx.woff2',
+        ],
+        unicodeRange:
+          'U+0100-02AF, U+0304, U+0308, U+0329, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF',
+      },
+      {
+        style: 'normal',
+        weight: 600,
+        format: 'woff2',
+        sources: [
+          'https://fonts.gstatic.com/s/sourcesans3/v9/nwpStKy2OAdR1K-IwhWudF-R3w8aZejZ5HZV8Q.woff2',
+        ],
+        unicodeRange:
+          'U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD',
+      },
+      {
+        style: 'normal',
+        weight: 700,
+        format: 'woff2',
+        sources: [
+          'https://fonts.gstatic.com/s/sourcesans3/v9/nwpStKy2OAdR1K-IwhWudF-R3wIaZejZ5HZV8ZRx.woff2',
+        ],
+        unicodeRange: 'U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F',
+      },
+      {
+        style: 'normal',
+        weight: 700,
+        format: 'woff2',
+        sources: [
+          'https://fonts.gstatic.com/s/sourcesans3/v9/nwpStKy2OAdR1K-IwhWudF-R3wsaZejZ5HZV8ZRx.woff2',
+        ],
+        unicodeRange: 'U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116',
+      },
+      {
+        style: 'normal',
+        weight: 700,
+        format: 'woff2',
+        sources: [
+          'https://fonts.gstatic.com/s/sourcesans3/v9/nwpStKy2OAdR1K-IwhWudF-R3wMaZejZ5HZV8ZRx.woff2',
+        ],
+        unicodeRange: 'U+1F00-1FFF',
+      },
+      {
+        style: 'normal',
+        weight: 700,
+        format: 'woff2',
+        sources: [
+          'https://fonts.gstatic.com/s/sourcesans3/v9/nwpStKy2OAdR1K-IwhWudF-R3wwaZejZ5HZV8ZRx.woff2',
+        ],
+        unicodeRange: 'U+0370-03FF',
+      },
+      {
+        style: 'normal',
+        weight: 700,
+        format: 'woff2',
+        sources: [
+          'https://fonts.gstatic.com/s/sourcesans3/v9/nwpStKy2OAdR1K-IwhWudF-R3wAaZejZ5HZV8ZRx.woff2',
+        ],
+        unicodeRange:
+          'U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB',
+      },
+      {
+        style: 'normal',
+        weight: 700,
+        format: 'woff2',
+        sources: [
+          'https://fonts.gstatic.com/s/sourcesans3/v9/nwpStKy2OAdR1K-IwhWudF-R3wEaZejZ5HZV8ZRx.woff2',
+        ],
+        unicodeRange:
+          'U+0100-02AF, U+0304, U+0308, U+0329, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF',
+      },
+      {
+        style: 'normal',
+        weight: 700,
+        format: 'woff2',
+        sources: [
+          'https://fonts.gstatic.com/s/sourcesans3/v9/nwpStKy2OAdR1K-IwhWudF-R3w8aZejZ5HZV8Q.woff2',
+        ],
+        unicodeRange:
+          'U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD',
+      },
+      {
+        style: 'normal',
+        weight: 800,
+        format: 'woff2',
+        sources: [
+          'https://fonts.gstatic.com/s/sourcesans3/v9/nwpStKy2OAdR1K-IwhWudF-R3wIaZejZ5HZV8ZRx.woff2',
+        ],
+        unicodeRange: 'U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F',
+      },
+      {
+        style: 'normal',
+        weight: 800,
+        format: 'woff2',
+        sources: [
+          'https://fonts.gstatic.com/s/sourcesans3/v9/nwpStKy2OAdR1K-IwhWudF-R3wsaZejZ5HZV8ZRx.woff2',
+        ],
+        unicodeRange: 'U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116',
+      },
+      {
+        style: 'normal',
+        weight: 800,
+        format: 'woff2',
+        sources: [
+          'https://fonts.gstatic.com/s/sourcesans3/v9/nwpStKy2OAdR1K-IwhWudF-R3wMaZejZ5HZV8ZRx.woff2',
+        ],
+        unicodeRange: 'U+1F00-1FFF',
+      },
+      {
+        style: 'normal',
+        weight: 800,
+        format: 'woff2',
+        sources: [
+          'https://fonts.gstatic.com/s/sourcesans3/v9/nwpStKy2OAdR1K-IwhWudF-R3wwaZejZ5HZV8ZRx.woff2',
+        ],
+        unicodeRange: 'U+0370-03FF',
+      },
+      {
+        style: 'normal',
+        weight: 800,
+        format: 'woff2',
+        sources: [
+          'https://fonts.gstatic.com/s/sourcesans3/v9/nwpStKy2OAdR1K-IwhWudF-R3wAaZejZ5HZV8ZRx.woff2',
+        ],
+        unicodeRange:
+          'U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB',
+      },
+      {
+        style: 'normal',
+        weight: 800,
+        format: 'woff2',
+        sources: [
+          'https://fonts.gstatic.com/s/sourcesans3/v9/nwpStKy2OAdR1K-IwhWudF-R3wEaZejZ5HZV8ZRx.woff2',
+        ],
+        unicodeRange:
+          'U+0100-02AF, U+0304, U+0308, U+0329, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF',
+      },
+      {
+        style: 'normal',
+        weight: 800,
+        format: 'woff2',
+        sources: [
+          'https://fonts.gstatic.com/s/sourcesans3/v9/nwpStKy2OAdR1K-IwhWudF-R3w8aZejZ5HZV8Q.woff2',
+        ],
+        unicodeRange:
+          'U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD',
+      },
+      {
+        style: 'normal',
+        weight: 900,
+        format: 'woff2',
+        sources: [
+          'https://fonts.gstatic.com/s/sourcesans3/v9/nwpStKy2OAdR1K-IwhWudF-R3wIaZejZ5HZV8ZRx.woff2',
+        ],
+        unicodeRange: 'U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F',
+      },
+      {
+        style: 'normal',
+        weight: 900,
+        format: 'woff2',
+        sources: [
+          'https://fonts.gstatic.com/s/sourcesans3/v9/nwpStKy2OAdR1K-IwhWudF-R3wsaZejZ5HZV8ZRx.woff2',
+        ],
+        unicodeRange: 'U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116',
+      },
+      {
+        style: 'normal',
+        weight: 900,
+        format: 'woff2',
+        sources: [
+          'https://fonts.gstatic.com/s/sourcesans3/v9/nwpStKy2OAdR1K-IwhWudF-R3wMaZejZ5HZV8ZRx.woff2',
+        ],
+        unicodeRange: 'U+1F00-1FFF',
+      },
+      {
+        style: 'normal',
+        weight: 900,
+        format: 'woff2',
+        sources: [
+          'https://fonts.gstatic.com/s/sourcesans3/v9/nwpStKy2OAdR1K-IwhWudF-R3wwaZejZ5HZV8ZRx.woff2',
+        ],
+        unicodeRange: 'U+0370-03FF',
+      },
+      {
+        style: 'normal',
+        weight: 900,
+        format: 'woff2',
+        sources: [
+          'https://fonts.gstatic.com/s/sourcesans3/v9/nwpStKy2OAdR1K-IwhWudF-R3wAaZejZ5HZV8ZRx.woff2',
+        ],
+        unicodeRange:
+          'U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB',
+      },
+      {
+        style: 'normal',
+        weight: 900,
+        format: 'woff2',
+        sources: [
+          'https://fonts.gstatic.com/s/sourcesans3/v9/nwpStKy2OAdR1K-IwhWudF-R3wEaZejZ5HZV8ZRx.woff2',
+        ],
+        unicodeRange:
+          'U+0100-02AF, U+0304, U+0308, U+0329, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF',
       },
     ],
   };
-  const roboto: FontFace = {
-    family: 'Roboto Mono',
+  const sourceCodePro: FontFace = {
+    family: 'Source Code Pro',
     variants: [
       {
-        style: 'normal',
-        weight: 400,
+        style: 'italic',
+        weight: 200,
         format: 'woff2',
         sources: [
-          'Roboto Mono',
-          'RobotoMono-Regular',
-          `${url}/fonts/roboto_mono/RobotoMono-Regular.ttf`,
+          'https://fonts.gstatic.com/s/sourcecodepro/v22/HI_QiYsKILxRpg3hIP6sJ7fM7PqlONvZlMIXxw.woff2',
+        ],
+        unicodeRange: 'U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F',
+      },
+      {
+        style: 'italic',
+        weight: 200,
+        format: 'woff2',
+        sources: [
+          'https://fonts.gstatic.com/s/sourcecodepro/v22/HI_QiYsKILxRpg3hIP6sJ7fM7PqlONvQlMIXxw.woff2',
+        ],
+        unicodeRange: 'U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116',
+      },
+      {
+        style: 'italic',
+        weight: 200,
+        format: 'woff2',
+        sources: [
+          'https://fonts.gstatic.com/s/sourcecodepro/v22/HI_QiYsKILxRpg3hIP6sJ7fM7PqlONvYlMIXxw.woff2',
+        ],
+        unicodeRange: 'U+1F00-1FFF',
+      },
+      {
+        style: 'italic',
+        weight: 200,
+        format: 'woff2',
+        sources: [
+          'https://fonts.gstatic.com/s/sourcecodepro/v22/HI_QiYsKILxRpg3hIP6sJ7fM7PqlONvXlMIXxw.woff2',
+        ],
+        unicodeRange: 'U+0370-03FF',
+      },
+      {
+        style: 'italic',
+        weight: 200,
+        format: 'woff2',
+        sources: [
+          'https://fonts.gstatic.com/s/sourcecodepro/v22/HI_QiYsKILxRpg3hIP6sJ7fM7PqlONvblMIXxw.woff2',
         ],
         unicodeRange:
-          'U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD',
+          'U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB',
+      },
+      {
+        style: 'italic',
+        weight: 200,
+        format: 'woff2',
+        sources: [
+          'https://fonts.gstatic.com/s/sourcecodepro/v22/HI_QiYsKILxRpg3hIP6sJ7fM7PqlONvalMIXxw.woff2',
+        ],
+        unicodeRange:
+          'U+0100-02AF, U+0304, U+0308, U+0329, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF',
+      },
+      {
+        style: 'italic',
+        weight: 200,
+        format: 'woff2',
+        sources: [
+          'https://fonts.gstatic.com/s/sourcecodepro/v22/HI_QiYsKILxRpg3hIP6sJ7fM7PqlONvUlMI.woff2',
+        ],
+        unicodeRange:
+          'U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD',
+      },
+      {
+        style: 'italic',
+        weight: 300,
+        format: 'woff2',
+        sources: [
+          'https://fonts.gstatic.com/s/sourcecodepro/v22/HI_QiYsKILxRpg3hIP6sJ7fM7PqlONvZlMIXxw.woff2',
+        ],
+        unicodeRange: 'U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F',
+      },
+      {
+        style: 'italic',
+        weight: 300,
+        format: 'woff2',
+        sources: [
+          'https://fonts.gstatic.com/s/sourcecodepro/v22/HI_QiYsKILxRpg3hIP6sJ7fM7PqlONvQlMIXxw.woff2',
+        ],
+        unicodeRange: 'U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116',
+      },
+      {
+        style: 'italic',
+        weight: 300,
+        format: 'woff2',
+        sources: [
+          'https://fonts.gstatic.com/s/sourcecodepro/v22/HI_QiYsKILxRpg3hIP6sJ7fM7PqlONvYlMIXxw.woff2',
+        ],
+        unicodeRange: 'U+1F00-1FFF',
+      },
+      {
+        style: 'italic',
+        weight: 300,
+        format: 'woff2',
+        sources: [
+          'https://fonts.gstatic.com/s/sourcecodepro/v22/HI_QiYsKILxRpg3hIP6sJ7fM7PqlONvXlMIXxw.woff2',
+        ],
+        unicodeRange: 'U+0370-03FF',
+      },
+      {
+        style: 'italic',
+        weight: 300,
+        format: 'woff2',
+        sources: [
+          'https://fonts.gstatic.com/s/sourcecodepro/v22/HI_QiYsKILxRpg3hIP6sJ7fM7PqlONvblMIXxw.woff2',
+        ],
+        unicodeRange:
+          'U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB',
+      },
+      {
+        style: 'italic',
+        weight: 300,
+        format: 'woff2',
+        sources: [
+          'https://fonts.gstatic.com/s/sourcecodepro/v22/HI_QiYsKILxRpg3hIP6sJ7fM7PqlONvalMIXxw.woff2',
+        ],
+        unicodeRange:
+          'U+0100-02AF, U+0304, U+0308, U+0329, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF',
+      },
+      {
+        style: 'italic',
+        weight: 300,
+        format: 'woff2',
+        sources: [
+          'https://fonts.gstatic.com/s/sourcecodepro/v22/HI_QiYsKILxRpg3hIP6sJ7fM7PqlONvUlMI.woff2',
+        ],
+        unicodeRange:
+          'U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD',
       },
       {
         style: 'italic',
         weight: 400,
+        format: 'woff2',
         sources: [
-          'Roboto Mono Italic',
-          'RobotoMono-Italic',
-          `${url}/fonts/roboto_mono/RobotoMono-Italic.ttf`,
+          'https://fonts.gstatic.com/s/sourcecodepro/v22/HI_QiYsKILxRpg3hIP6sJ7fM7PqlONvZlMIXxw.woff2',
+        ],
+        unicodeRange: 'U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F',
+      },
+      {
+        style: 'italic',
+        weight: 400,
+        format: 'woff2',
+        sources: [
+          'https://fonts.gstatic.com/s/sourcecodepro/v22/HI_QiYsKILxRpg3hIP6sJ7fM7PqlONvQlMIXxw.woff2',
+        ],
+        unicodeRange: 'U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116',
+      },
+      {
+        style: 'italic',
+        weight: 400,
+        format: 'woff2',
+        sources: [
+          'https://fonts.gstatic.com/s/sourcecodepro/v22/HI_QiYsKILxRpg3hIP6sJ7fM7PqlONvYlMIXxw.woff2',
+        ],
+        unicodeRange: 'U+1F00-1FFF',
+      },
+      {
+        style: 'italic',
+        weight: 400,
+        format: 'woff2',
+        sources: [
+          'https://fonts.gstatic.com/s/sourcecodepro/v22/HI_QiYsKILxRpg3hIP6sJ7fM7PqlONvXlMIXxw.woff2',
+        ],
+        unicodeRange: 'U+0370-03FF',
+      },
+      {
+        style: 'italic',
+        weight: 400,
+        format: 'woff2',
+        sources: [
+          'https://fonts.gstatic.com/s/sourcecodepro/v22/HI_QiYsKILxRpg3hIP6sJ7fM7PqlONvblMIXxw.woff2',
         ],
         unicodeRange:
-          'U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD',
+          'U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB',
+      },
+      {
+        style: 'italic',
+        weight: 400,
+        format: 'woff2',
+        sources: [
+          'https://fonts.gstatic.com/s/sourcecodepro/v22/HI_QiYsKILxRpg3hIP6sJ7fM7PqlONvalMIXxw.woff2',
+        ],
+        unicodeRange:
+          'U+0100-02AF, U+0304, U+0308, U+0329, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF',
+      },
+      {
+        style: 'italic',
+        weight: 400,
+        format: 'woff2',
+        sources: [
+          'https://fonts.gstatic.com/s/sourcecodepro/v22/HI_QiYsKILxRpg3hIP6sJ7fM7PqlONvUlMI.woff2',
+        ],
+        unicodeRange:
+          'U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD',
+      },
+      {
+        style: 'italic',
+        weight: 500,
+        format: 'woff2',
+        sources: [
+          'https://fonts.gstatic.com/s/sourcecodepro/v22/HI_QiYsKILxRpg3hIP6sJ7fM7PqlONvZlMIXxw.woff2',
+        ],
+        unicodeRange: 'U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F',
+      },
+      {
+        style: 'italic',
+        weight: 500,
+        format: 'woff2',
+        sources: [
+          'https://fonts.gstatic.com/s/sourcecodepro/v22/HI_QiYsKILxRpg3hIP6sJ7fM7PqlONvQlMIXxw.woff2',
+        ],
+        unicodeRange: 'U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116',
+      },
+      {
+        style: 'italic',
+        weight: 500,
+        format: 'woff2',
+        sources: [
+          'https://fonts.gstatic.com/s/sourcecodepro/v22/HI_QiYsKILxRpg3hIP6sJ7fM7PqlONvYlMIXxw.woff2',
+        ],
+        unicodeRange: 'U+1F00-1FFF',
+      },
+      {
+        style: 'italic',
+        weight: 500,
+        format: 'woff2',
+        sources: [
+          'https://fonts.gstatic.com/s/sourcecodepro/v22/HI_QiYsKILxRpg3hIP6sJ7fM7PqlONvXlMIXxw.woff2',
+        ],
+        unicodeRange: 'U+0370-03FF',
+      },
+      {
+        style: 'italic',
+        weight: 500,
+        format: 'woff2',
+        sources: [
+          'https://fonts.gstatic.com/s/sourcecodepro/v22/HI_QiYsKILxRpg3hIP6sJ7fM7PqlONvblMIXxw.woff2',
+        ],
+        unicodeRange:
+          'U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB',
+      },
+      {
+        style: 'italic',
+        weight: 500,
+        format: 'woff2',
+        sources: [
+          'https://fonts.gstatic.com/s/sourcecodepro/v22/HI_QiYsKILxRpg3hIP6sJ7fM7PqlONvalMIXxw.woff2',
+        ],
+        unicodeRange:
+          'U+0100-02AF, U+0304, U+0308, U+0329, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF',
+      },
+      {
+        style: 'italic',
+        weight: 500,
+        format: 'woff2',
+        sources: [
+          'https://fonts.gstatic.com/s/sourcecodepro/v22/HI_QiYsKILxRpg3hIP6sJ7fM7PqlONvUlMI.woff2',
+        ],
+        unicodeRange:
+          'U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD',
+      },
+      {
+        style: 'italic',
+        weight: 600,
+        format: 'woff2',
+        sources: [
+          'https://fonts.gstatic.com/s/sourcecodepro/v22/HI_QiYsKILxRpg3hIP6sJ7fM7PqlONvZlMIXxw.woff2',
+        ],
+        unicodeRange: 'U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F',
+      },
+      {
+        style: 'italic',
+        weight: 600,
+        format: 'woff2',
+        sources: [
+          'https://fonts.gstatic.com/s/sourcecodepro/v22/HI_QiYsKILxRpg3hIP6sJ7fM7PqlONvQlMIXxw.woff2',
+        ],
+        unicodeRange: 'U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116',
+      },
+      {
+        style: 'italic',
+        weight: 600,
+        format: 'woff2',
+        sources: [
+          'https://fonts.gstatic.com/s/sourcecodepro/v22/HI_QiYsKILxRpg3hIP6sJ7fM7PqlONvYlMIXxw.woff2',
+        ],
+        unicodeRange: 'U+1F00-1FFF',
+      },
+      {
+        style: 'italic',
+        weight: 600,
+        format: 'woff2',
+        sources: [
+          'https://fonts.gstatic.com/s/sourcecodepro/v22/HI_QiYsKILxRpg3hIP6sJ7fM7PqlONvXlMIXxw.woff2',
+        ],
+        unicodeRange: 'U+0370-03FF',
+      },
+      {
+        style: 'italic',
+        weight: 600,
+        format: 'woff2',
+        sources: [
+          'https://fonts.gstatic.com/s/sourcecodepro/v22/HI_QiYsKILxRpg3hIP6sJ7fM7PqlONvblMIXxw.woff2',
+        ],
+        unicodeRange:
+          'U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB',
+      },
+      {
+        style: 'italic',
+        weight: 600,
+        format: 'woff2',
+        sources: [
+          'https://fonts.gstatic.com/s/sourcecodepro/v22/HI_QiYsKILxRpg3hIP6sJ7fM7PqlONvalMIXxw.woff2',
+        ],
+        unicodeRange:
+          'U+0100-02AF, U+0304, U+0308, U+0329, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF',
+      },
+      {
+        style: 'italic',
+        weight: 600,
+        format: 'woff2',
+        sources: [
+          'https://fonts.gstatic.com/s/sourcecodepro/v22/HI_QiYsKILxRpg3hIP6sJ7fM7PqlONvUlMI.woff2',
+        ],
+        unicodeRange:
+          'U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD',
+      },
+      {
+        style: 'italic',
+        weight: 700,
+        format: 'woff2',
+        sources: [
+          'https://fonts.gstatic.com/s/sourcecodepro/v22/HI_QiYsKILxRpg3hIP6sJ7fM7PqlONvZlMIXxw.woff2',
+        ],
+        unicodeRange: 'U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F',
+      },
+      {
+        style: 'italic',
+        weight: 700,
+        format: 'woff2',
+        sources: [
+          'https://fonts.gstatic.com/s/sourcecodepro/v22/HI_QiYsKILxRpg3hIP6sJ7fM7PqlONvQlMIXxw.woff2',
+        ],
+        unicodeRange: 'U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116',
+      },
+      {
+        style: 'italic',
+        weight: 700,
+        format: 'woff2',
+        sources: [
+          'https://fonts.gstatic.com/s/sourcecodepro/v22/HI_QiYsKILxRpg3hIP6sJ7fM7PqlONvYlMIXxw.woff2',
+        ],
+        unicodeRange: 'U+1F00-1FFF',
+      },
+      {
+        style: 'italic',
+        weight: 700,
+        format: 'woff2',
+        sources: [
+          'https://fonts.gstatic.com/s/sourcecodepro/v22/HI_QiYsKILxRpg3hIP6sJ7fM7PqlONvXlMIXxw.woff2',
+        ],
+        unicodeRange: 'U+0370-03FF',
+      },
+      {
+        style: 'italic',
+        weight: 700,
+        format: 'woff2',
+        sources: [
+          'https://fonts.gstatic.com/s/sourcecodepro/v22/HI_QiYsKILxRpg3hIP6sJ7fM7PqlONvblMIXxw.woff2',
+        ],
+        unicodeRange:
+          'U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB',
+      },
+      {
+        style: 'italic',
+        weight: 700,
+        format: 'woff2',
+        sources: [
+          'https://fonts.gstatic.com/s/sourcecodepro/v22/HI_QiYsKILxRpg3hIP6sJ7fM7PqlONvalMIXxw.woff2',
+        ],
+        unicodeRange:
+          'U+0100-02AF, U+0304, U+0308, U+0329, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF',
+      },
+      {
+        style: 'italic',
+        weight: 700,
+        format: 'woff2',
+        sources: [
+          'https://fonts.gstatic.com/s/sourcecodepro/v22/HI_QiYsKILxRpg3hIP6sJ7fM7PqlONvUlMI.woff2',
+        ],
+        unicodeRange:
+          'U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD',
+      },
+      {
+        style: 'italic',
+        weight: 800,
+        format: 'woff2',
+        sources: [
+          'https://fonts.gstatic.com/s/sourcecodepro/v22/HI_QiYsKILxRpg3hIP6sJ7fM7PqlONvZlMIXxw.woff2',
+        ],
+        unicodeRange: 'U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F',
+      },
+      {
+        style: 'italic',
+        weight: 800,
+        format: 'woff2',
+        sources: [
+          'https://fonts.gstatic.com/s/sourcecodepro/v22/HI_QiYsKILxRpg3hIP6sJ7fM7PqlONvQlMIXxw.woff2',
+        ],
+        unicodeRange: 'U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116',
+      },
+      {
+        style: 'italic',
+        weight: 800,
+        format: 'woff2',
+        sources: [
+          'https://fonts.gstatic.com/s/sourcecodepro/v22/HI_QiYsKILxRpg3hIP6sJ7fM7PqlONvYlMIXxw.woff2',
+        ],
+        unicodeRange: 'U+1F00-1FFF',
+      },
+      {
+        style: 'italic',
+        weight: 800,
+        format: 'woff2',
+        sources: [
+          'https://fonts.gstatic.com/s/sourcecodepro/v22/HI_QiYsKILxRpg3hIP6sJ7fM7PqlONvXlMIXxw.woff2',
+        ],
+        unicodeRange: 'U+0370-03FF',
+      },
+      {
+        style: 'italic',
+        weight: 800,
+        format: 'woff2',
+        sources: [
+          'https://fonts.gstatic.com/s/sourcecodepro/v22/HI_QiYsKILxRpg3hIP6sJ7fM7PqlONvblMIXxw.woff2',
+        ],
+        unicodeRange:
+          'U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB',
+      },
+      {
+        style: 'italic',
+        weight: 800,
+        format: 'woff2',
+        sources: [
+          'https://fonts.gstatic.com/s/sourcecodepro/v22/HI_QiYsKILxRpg3hIP6sJ7fM7PqlONvalMIXxw.woff2',
+        ],
+        unicodeRange:
+          'U+0100-02AF, U+0304, U+0308, U+0329, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF',
+      },
+      {
+        style: 'italic',
+        weight: 800,
+        format: 'woff2',
+        sources: [
+          'https://fonts.gstatic.com/s/sourcecodepro/v22/HI_QiYsKILxRpg3hIP6sJ7fM7PqlONvUlMI.woff2',
+        ],
+        unicodeRange:
+          'U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD',
+      },
+      {
+        style: 'italic',
+        weight: 900,
+        format: 'woff2',
+        sources: [
+          'https://fonts.gstatic.com/s/sourcecodepro/v22/HI_QiYsKILxRpg3hIP6sJ7fM7PqlONvZlMIXxw.woff2',
+        ],
+        unicodeRange: 'U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F',
+      },
+      {
+        style: 'italic',
+        weight: 900,
+        format: 'woff2',
+        sources: [
+          'https://fonts.gstatic.com/s/sourcecodepro/v22/HI_QiYsKILxRpg3hIP6sJ7fM7PqlONvQlMIXxw.woff2',
+        ],
+        unicodeRange: 'U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116',
+      },
+      {
+        style: 'italic',
+        weight: 900,
+        format: 'woff2',
+        sources: [
+          'https://fonts.gstatic.com/s/sourcecodepro/v22/HI_QiYsKILxRpg3hIP6sJ7fM7PqlONvYlMIXxw.woff2',
+        ],
+        unicodeRange: 'U+1F00-1FFF',
+      },
+      {
+        style: 'italic',
+        weight: 900,
+        format: 'woff2',
+        sources: [
+          'https://fonts.gstatic.com/s/sourcecodepro/v22/HI_QiYsKILxRpg3hIP6sJ7fM7PqlONvXlMIXxw.woff2',
+        ],
+        unicodeRange: 'U+0370-03FF',
+      },
+      {
+        style: 'italic',
+        weight: 900,
+        format: 'woff2',
+        sources: [
+          'https://fonts.gstatic.com/s/sourcecodepro/v22/HI_QiYsKILxRpg3hIP6sJ7fM7PqlONvblMIXxw.woff2',
+        ],
+        unicodeRange:
+          'U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB',
+      },
+      {
+        style: 'italic',
+        weight: 900,
+        format: 'woff2',
+        sources: [
+          'https://fonts.gstatic.com/s/sourcecodepro/v22/HI_QiYsKILxRpg3hIP6sJ7fM7PqlONvalMIXxw.woff2',
+        ],
+        unicodeRange:
+          'U+0100-02AF, U+0304, U+0308, U+0329, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF',
+      },
+      {
+        style: 'italic',
+        weight: 900,
+        format: 'woff2',
+        sources: [
+          'https://fonts.gstatic.com/s/sourcecodepro/v22/HI_QiYsKILxRpg3hIP6sJ7fM7PqlONvUlMI.woff2',
+        ],
+        unicodeRange:
+          'U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD',
+      },
+      {
+        style: 'normal',
+        weight: 200,
+        format: 'woff2',
+        sources: [
+          'https://fonts.gstatic.com/s/sourcecodepro/v22/HI_SiYsKILxRpg3hIP6sJ7fM7PqlMOvWjMY.woff2',
+        ],
+        unicodeRange: 'U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F',
+      },
+      {
+        style: 'normal',
+        weight: 200,
+        format: 'woff2',
+        sources: [
+          'https://fonts.gstatic.com/s/sourcecodepro/v22/HI_SiYsKILxRpg3hIP6sJ7fM7PqlOevWjMY.woff2',
+        ],
+        unicodeRange: 'U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116',
+      },
+      {
+        style: 'normal',
+        weight: 200,
+        format: 'woff2',
+        sources: [
+          'https://fonts.gstatic.com/s/sourcecodepro/v22/HI_SiYsKILxRpg3hIP6sJ7fM7PqlMevWjMY.woff2',
+        ],
+        unicodeRange: 'U+1F00-1FFF',
+      },
+      {
+        style: 'normal',
+        weight: 200,
+        format: 'woff2',
+        sources: [
+          'https://fonts.gstatic.com/s/sourcecodepro/v22/HI_SiYsKILxRpg3hIP6sJ7fM7PqlPuvWjMY.woff2',
+        ],
+        unicodeRange: 'U+0370-03FF',
+      },
+      {
+        style: 'normal',
+        weight: 200,
+        format: 'woff2',
+        sources: [
+          'https://fonts.gstatic.com/s/sourcecodepro/v22/HI_SiYsKILxRpg3hIP6sJ7fM7PqlMuvWjMY.woff2',
+        ],
+        unicodeRange:
+          'U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB',
+      },
+      {
+        style: 'normal',
+        weight: 200,
+        format: 'woff2',
+        sources: [
+          'https://fonts.gstatic.com/s/sourcecodepro/v22/HI_SiYsKILxRpg3hIP6sJ7fM7PqlM-vWjMY.woff2',
+        ],
+        unicodeRange:
+          'U+0100-02AF, U+0304, U+0308, U+0329, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF',
+      },
+      {
+        style: 'normal',
+        weight: 200,
+        format: 'woff2',
+        sources: [
+          'https://fonts.gstatic.com/s/sourcecodepro/v22/HI_SiYsKILxRpg3hIP6sJ7fM7PqlPevW.woff2',
+        ],
+        unicodeRange:
+          'U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD',
+      },
+      {
+        style: 'normal',
+        weight: 300,
+        format: 'woff2',
+        sources: [
+          'https://fonts.gstatic.com/s/sourcecodepro/v22/HI_SiYsKILxRpg3hIP6sJ7fM7PqlMOvWjMY.woff2',
+        ],
+        unicodeRange: 'U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F',
+      },
+      {
+        style: 'normal',
+        weight: 300,
+        format: 'woff2',
+        sources: [
+          'https://fonts.gstatic.com/s/sourcecodepro/v22/HI_SiYsKILxRpg3hIP6sJ7fM7PqlOevWjMY.woff2',
+        ],
+        unicodeRange: 'U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116',
+      },
+      {
+        style: 'normal',
+        weight: 300,
+        format: 'woff2',
+        sources: [
+          'https://fonts.gstatic.com/s/sourcecodepro/v22/HI_SiYsKILxRpg3hIP6sJ7fM7PqlMevWjMY.woff2',
+        ],
+        unicodeRange: 'U+1F00-1FFF',
+      },
+      {
+        style: 'normal',
+        weight: 300,
+        format: 'woff2',
+        sources: [
+          'https://fonts.gstatic.com/s/sourcecodepro/v22/HI_SiYsKILxRpg3hIP6sJ7fM7PqlPuvWjMY.woff2',
+        ],
+        unicodeRange: 'U+0370-03FF',
+      },
+      {
+        style: 'normal',
+        weight: 300,
+        format: 'woff2',
+        sources: [
+          'https://fonts.gstatic.com/s/sourcecodepro/v22/HI_SiYsKILxRpg3hIP6sJ7fM7PqlMuvWjMY.woff2',
+        ],
+        unicodeRange:
+          'U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB',
+      },
+      {
+        style: 'normal',
+        weight: 300,
+        format: 'woff2',
+        sources: [
+          'https://fonts.gstatic.com/s/sourcecodepro/v22/HI_SiYsKILxRpg3hIP6sJ7fM7PqlM-vWjMY.woff2',
+        ],
+        unicodeRange:
+          'U+0100-02AF, U+0304, U+0308, U+0329, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF',
+      },
+      {
+        style: 'normal',
+        weight: 300,
+        format: 'woff2',
+        sources: [
+          'https://fonts.gstatic.com/s/sourcecodepro/v22/HI_SiYsKILxRpg3hIP6sJ7fM7PqlPevW.woff2',
+        ],
+        unicodeRange:
+          'U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD',
+      },
+      {
+        style: 'normal',
+        weight: 400,
+        format: 'woff2',
+        sources: [
+          'https://fonts.gstatic.com/s/sourcecodepro/v22/HI_SiYsKILxRpg3hIP6sJ7fM7PqlMOvWjMY.woff2',
+        ],
+        unicodeRange: 'U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F',
+      },
+      {
+        style: 'normal',
+        weight: 400,
+        format: 'woff2',
+        sources: [
+          'https://fonts.gstatic.com/s/sourcecodepro/v22/HI_SiYsKILxRpg3hIP6sJ7fM7PqlOevWjMY.woff2',
+        ],
+        unicodeRange: 'U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116',
+      },
+      {
+        style: 'normal',
+        weight: 400,
+        format: 'woff2',
+        sources: [
+          'https://fonts.gstatic.com/s/sourcecodepro/v22/HI_SiYsKILxRpg3hIP6sJ7fM7PqlMevWjMY.woff2',
+        ],
+        unicodeRange: 'U+1F00-1FFF',
+      },
+      {
+        style: 'normal',
+        weight: 400,
+        format: 'woff2',
+        sources: [
+          'https://fonts.gstatic.com/s/sourcecodepro/v22/HI_SiYsKILxRpg3hIP6sJ7fM7PqlPuvWjMY.woff2',
+        ],
+        unicodeRange: 'U+0370-03FF',
+      },
+      {
+        style: 'normal',
+        weight: 400,
+        format: 'woff2',
+        sources: [
+          'https://fonts.gstatic.com/s/sourcecodepro/v22/HI_SiYsKILxRpg3hIP6sJ7fM7PqlMuvWjMY.woff2',
+        ],
+        unicodeRange:
+          'U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB',
+      },
+      {
+        style: 'normal',
+        weight: 400,
+        format: 'woff2',
+        sources: [
+          'https://fonts.gstatic.com/s/sourcecodepro/v22/HI_SiYsKILxRpg3hIP6sJ7fM7PqlM-vWjMY.woff2',
+        ],
+        unicodeRange:
+          'U+0100-02AF, U+0304, U+0308, U+0329, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF',
+      },
+      {
+        style: 'normal',
+        weight: 400,
+        format: 'woff2',
+        sources: [
+          'https://fonts.gstatic.com/s/sourcecodepro/v22/HI_SiYsKILxRpg3hIP6sJ7fM7PqlPevW.woff2',
+        ],
+        unicodeRange:
+          'U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD',
+      },
+      {
+        style: 'normal',
+        weight: 500,
+        format: 'woff2',
+        sources: [
+          'https://fonts.gstatic.com/s/sourcecodepro/v22/HI_SiYsKILxRpg3hIP6sJ7fM7PqlMOvWjMY.woff2',
+        ],
+        unicodeRange: 'U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F',
+      },
+      {
+        style: 'normal',
+        weight: 500,
+        format: 'woff2',
+        sources: [
+          'https://fonts.gstatic.com/s/sourcecodepro/v22/HI_SiYsKILxRpg3hIP6sJ7fM7PqlOevWjMY.woff2',
+        ],
+        unicodeRange: 'U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116',
+      },
+      {
+        style: 'normal',
+        weight: 500,
+        format: 'woff2',
+        sources: [
+          'https://fonts.gstatic.com/s/sourcecodepro/v22/HI_SiYsKILxRpg3hIP6sJ7fM7PqlMevWjMY.woff2',
+        ],
+        unicodeRange: 'U+1F00-1FFF',
+      },
+      {
+        style: 'normal',
+        weight: 500,
+        format: 'woff2',
+        sources: [
+          'https://fonts.gstatic.com/s/sourcecodepro/v22/HI_SiYsKILxRpg3hIP6sJ7fM7PqlPuvWjMY.woff2',
+        ],
+        unicodeRange: 'U+0370-03FF',
+      },
+      {
+        style: 'normal',
+        weight: 500,
+        format: 'woff2',
+        sources: [
+          'https://fonts.gstatic.com/s/sourcecodepro/v22/HI_SiYsKILxRpg3hIP6sJ7fM7PqlMuvWjMY.woff2',
+        ],
+        unicodeRange:
+          'U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB',
+      },
+      {
+        style: 'normal',
+        weight: 500,
+        format: 'woff2',
+        sources: [
+          'https://fonts.gstatic.com/s/sourcecodepro/v22/HI_SiYsKILxRpg3hIP6sJ7fM7PqlM-vWjMY.woff2',
+        ],
+        unicodeRange:
+          'U+0100-02AF, U+0304, U+0308, U+0329, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF',
+      },
+      {
+        style: 'normal',
+        weight: 500,
+        format: 'woff2',
+        sources: [
+          'https://fonts.gstatic.com/s/sourcecodepro/v22/HI_SiYsKILxRpg3hIP6sJ7fM7PqlPevW.woff2',
+        ],
+        unicodeRange:
+          'U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD',
+      },
+      {
+        style: 'normal',
+        weight: 600,
+        format: 'woff2',
+        sources: [
+          'https://fonts.gstatic.com/s/sourcecodepro/v22/HI_SiYsKILxRpg3hIP6sJ7fM7PqlMOvWjMY.woff2',
+        ],
+        unicodeRange: 'U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F',
+      },
+      {
+        style: 'normal',
+        weight: 600,
+        format: 'woff2',
+        sources: [
+          'https://fonts.gstatic.com/s/sourcecodepro/v22/HI_SiYsKILxRpg3hIP6sJ7fM7PqlOevWjMY.woff2',
+        ],
+        unicodeRange: 'U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116',
+      },
+      {
+        style: 'normal',
+        weight: 600,
+        format: 'woff2',
+        sources: [
+          'https://fonts.gstatic.com/s/sourcecodepro/v22/HI_SiYsKILxRpg3hIP6sJ7fM7PqlMevWjMY.woff2',
+        ],
+        unicodeRange: 'U+1F00-1FFF',
+      },
+      {
+        style: 'normal',
+        weight: 600,
+        format: 'woff2',
+        sources: [
+          'https://fonts.gstatic.com/s/sourcecodepro/v22/HI_SiYsKILxRpg3hIP6sJ7fM7PqlPuvWjMY.woff2',
+        ],
+        unicodeRange: 'U+0370-03FF',
+      },
+      {
+        style: 'normal',
+        weight: 600,
+        format: 'woff2',
+        sources: [
+          'https://fonts.gstatic.com/s/sourcecodepro/v22/HI_SiYsKILxRpg3hIP6sJ7fM7PqlMuvWjMY.woff2',
+        ],
+        unicodeRange:
+          'U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB',
+      },
+      {
+        style: 'normal',
+        weight: 600,
+        format: 'woff2',
+        sources: [
+          'https://fonts.gstatic.com/s/sourcecodepro/v22/HI_SiYsKILxRpg3hIP6sJ7fM7PqlM-vWjMY.woff2',
+        ],
+        unicodeRange:
+          'U+0100-02AF, U+0304, U+0308, U+0329, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF',
+      },
+      {
+        style: 'normal',
+        weight: 600,
+        format: 'woff2',
+        sources: [
+          'https://fonts.gstatic.com/s/sourcecodepro/v22/HI_SiYsKILxRpg3hIP6sJ7fM7PqlPevW.woff2',
+        ],
+        unicodeRange:
+          'U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD',
       },
       {
         style: 'normal',
         weight: 700,
         format: 'woff2',
         sources: [
-          'Roboto Mono Bold',
-          'RobotoMono-Bold',
-          `${url}/fonts/roboto_mono/RobotoMono-Bold.ttf`,
+          'https://fonts.gstatic.com/s/sourcecodepro/v22/HI_SiYsKILxRpg3hIP6sJ7fM7PqlMOvWjMY.woff2',
         ],
-        unicodeRange:
-          'U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD',
+        unicodeRange: 'U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F',
       },
       {
-        style: 'italic',
+        style: 'normal',
         weight: 700,
         format: 'woff2',
         sources: [
-          'Roboto Mono Bold Italic',
-          'RobotoMono-BoldItalic',
-          `${url}/fonts/roboto_mono/RobotoMono-BoldItalic.ttf`,
+          'https://fonts.gstatic.com/s/sourcecodepro/v22/HI_SiYsKILxRpg3hIP6sJ7fM7PqlOevWjMY.woff2',
+        ],
+        unicodeRange: 'U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116',
+      },
+      {
+        style: 'normal',
+        weight: 700,
+        format: 'woff2',
+        sources: [
+          'https://fonts.gstatic.com/s/sourcecodepro/v22/HI_SiYsKILxRpg3hIP6sJ7fM7PqlMevWjMY.woff2',
+        ],
+        unicodeRange: 'U+1F00-1FFF',
+      },
+      {
+        style: 'normal',
+        weight: 700,
+        format: 'woff2',
+        sources: [
+          'https://fonts.gstatic.com/s/sourcecodepro/v22/HI_SiYsKILxRpg3hIP6sJ7fM7PqlPuvWjMY.woff2',
+        ],
+        unicodeRange: 'U+0370-03FF',
+      },
+      {
+        style: 'normal',
+        weight: 700,
+        format: 'woff2',
+        sources: [
+          'https://fonts.gstatic.com/s/sourcecodepro/v22/HI_SiYsKILxRpg3hIP6sJ7fM7PqlMuvWjMY.woff2',
         ],
         unicodeRange:
-          'U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD',
+          'U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB',
+      },
+      {
+        style: 'normal',
+        weight: 700,
+        format: 'woff2',
+        sources: [
+          'https://fonts.gstatic.com/s/sourcecodepro/v22/HI_SiYsKILxRpg3hIP6sJ7fM7PqlM-vWjMY.woff2',
+        ],
+        unicodeRange:
+          'U+0100-02AF, U+0304, U+0308, U+0329, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF',
+      },
+      {
+        style: 'normal',
+        weight: 700,
+        format: 'woff2',
+        sources: [
+          'https://fonts.gstatic.com/s/sourcecodepro/v22/HI_SiYsKILxRpg3hIP6sJ7fM7PqlPevW.woff2',
+        ],
+        unicodeRange:
+          'U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD',
+      },
+      {
+        style: 'normal',
+        weight: 800,
+        format: 'woff2',
+        sources: [
+          'https://fonts.gstatic.com/s/sourcecodepro/v22/HI_SiYsKILxRpg3hIP6sJ7fM7PqlMOvWjMY.woff2',
+        ],
+        unicodeRange: 'U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F',
+      },
+      {
+        style: 'normal',
+        weight: 800,
+        format: 'woff2',
+        sources: [
+          'https://fonts.gstatic.com/s/sourcecodepro/v22/HI_SiYsKILxRpg3hIP6sJ7fM7PqlOevWjMY.woff2',
+        ],
+        unicodeRange: 'U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116',
+      },
+      {
+        style: 'normal',
+        weight: 800,
+        format: 'woff2',
+        sources: [
+          'https://fonts.gstatic.com/s/sourcecodepro/v22/HI_SiYsKILxRpg3hIP6sJ7fM7PqlMevWjMY.woff2',
+        ],
+        unicodeRange: 'U+1F00-1FFF',
+      },
+      {
+        style: 'normal',
+        weight: 800,
+        format: 'woff2',
+        sources: [
+          'https://fonts.gstatic.com/s/sourcecodepro/v22/HI_SiYsKILxRpg3hIP6sJ7fM7PqlPuvWjMY.woff2',
+        ],
+        unicodeRange: 'U+0370-03FF',
+      },
+      {
+        style: 'normal',
+        weight: 800,
+        format: 'woff2',
+        sources: [
+          'https://fonts.gstatic.com/s/sourcecodepro/v22/HI_SiYsKILxRpg3hIP6sJ7fM7PqlMuvWjMY.woff2',
+        ],
+        unicodeRange:
+          'U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB',
+      },
+      {
+        style: 'normal',
+        weight: 800,
+        format: 'woff2',
+        sources: [
+          'https://fonts.gstatic.com/s/sourcecodepro/v22/HI_SiYsKILxRpg3hIP6sJ7fM7PqlM-vWjMY.woff2',
+        ],
+        unicodeRange:
+          'U+0100-02AF, U+0304, U+0308, U+0329, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF',
+      },
+      {
+        style: 'normal',
+        weight: 800,
+        format: 'woff2',
+        sources: [
+          'https://fonts.gstatic.com/s/sourcecodepro/v22/HI_SiYsKILxRpg3hIP6sJ7fM7PqlPevW.woff2',
+        ],
+        unicodeRange:
+          'U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD',
+      },
+      {
+        style: 'normal',
+        weight: 900,
+        format: 'woff2',
+        sources: [
+          'https://fonts.gstatic.com/s/sourcecodepro/v22/HI_SiYsKILxRpg3hIP6sJ7fM7PqlMOvWjMY.woff2',
+        ],
+        unicodeRange: 'U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F',
+      },
+      {
+        style: 'normal',
+        weight: 900,
+        format: 'woff2',
+        sources: [
+          'https://fonts.gstatic.com/s/sourcecodepro/v22/HI_SiYsKILxRpg3hIP6sJ7fM7PqlOevWjMY.woff2',
+        ],
+        unicodeRange: 'U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116',
+      },
+      {
+        style: 'normal',
+        weight: 900,
+        format: 'woff2',
+        sources: [
+          'https://fonts.gstatic.com/s/sourcecodepro/v22/HI_SiYsKILxRpg3hIP6sJ7fM7PqlMevWjMY.woff2',
+        ],
+        unicodeRange: 'U+1F00-1FFF',
+      },
+      {
+        style: 'normal',
+        weight: 900,
+        format: 'woff2',
+        sources: [
+          'https://fonts.gstatic.com/s/sourcecodepro/v22/HI_SiYsKILxRpg3hIP6sJ7fM7PqlPuvWjMY.woff2',
+        ],
+        unicodeRange: 'U+0370-03FF',
+      },
+      {
+        style: 'normal',
+        weight: 900,
+        format: 'woff2',
+        sources: [
+          'https://fonts.gstatic.com/s/sourcecodepro/v22/HI_SiYsKILxRpg3hIP6sJ7fM7PqlMuvWjMY.woff2',
+        ],
+        unicodeRange:
+          'U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB',
+      },
+      {
+        style: 'normal',
+        weight: 900,
+        format: 'woff2',
+        sources: [
+          'https://fonts.gstatic.com/s/sourcecodepro/v22/HI_SiYsKILxRpg3hIP6sJ7fM7PqlM-vWjMY.woff2',
+        ],
+        unicodeRange:
+          'U+0100-02AF, U+0304, U+0308, U+0329, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF',
       },
     ],
   };
@@ -256,12 +2157,12 @@ export const Fonts: FunctionComponent<Props> = ({ url }) => {
     <style
       dangerouslySetInnerHTML={{
         __html: `
-        ${[interUi, roboto]
+        ${[sourceSans3, sourceCodePro]
           .flatMap(({ family, variants }) =>
             variants.map(({ style, weight, format, sources, unicodeRange }) => {
               const src = sources
                 .map((source) =>
-                  source.startsWith(url)
+                  !source.startsWith(url)
                     ? `url('${source}') format('${format || source.split('.').pop()}')`
                     : `local('${source}')`
                 )
