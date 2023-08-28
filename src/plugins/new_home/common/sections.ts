@@ -26,6 +26,7 @@ export const SECTIONS: Section[] = [
         button: i18n.translate('newHome.addData.addSampleData.button', {
           defaultMessage: 'Choose data',
         }),
+        buttonType: 'flyout',
       },
       {
         type: 'static',
@@ -34,6 +35,8 @@ export const SECTIONS: Section[] = [
         button: i18n.translate('newHome.addData.ingest.button', {
           defaultMessage: 'Documentation',
         }),
+        buttonType: 'link',
+        href: 'https://opensearch.org',
       },
       {
         type: 'static',
@@ -42,6 +45,8 @@ export const SECTIONS: Section[] = [
         }),
         description: LOREM_TEXT,
         button: i18n.translate('newHome.addData.connect.button', { defaultMessage: 'Button' }),
+        buttonType: 'link',
+        href: 'https://opensearch.org',
       },
     ],
   },

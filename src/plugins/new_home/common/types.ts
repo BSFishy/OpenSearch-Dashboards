@@ -1,10 +1,19 @@
 import { IconType } from '@elastic/eui';
 
-export interface StaticCategory {
+export type StaticCategory = {
   type: 'static';
   title: string;
   description: string;
   button: string;
+} & (FlyoutStaticCategory | LinkStaticCategory);
+
+interface FlyoutStaticCategory {
+  buttonType: 'flyout';
+}
+
+interface LinkStaticCategory {
+  buttonType: 'link';
+  href: string;
 }
 
 export interface ListLink {
@@ -31,4 +40,10 @@ export interface Section {
   description: string;
   docLink?: string;
   categories: Category[];
+}
+
+export interface SampleData {
+  id: string;
+  title: string;
+  description: string;
 }
