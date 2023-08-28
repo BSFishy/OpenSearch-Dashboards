@@ -1,4 +1,4 @@
-import React, { ReactNode, useMemo, Dispatch, SetStateAction } from 'react';
+import React, { ReactNode, useState, useMemo, Dispatch, SetStateAction } from 'react';
 import { i18n } from '@osd/i18n';
 import { FormattedMessage, I18nProvider } from '@osd/i18n/react';
 import { BrowserRouter as Router } from 'react-router-dom';
@@ -15,6 +15,7 @@ import {
 
 import { CoreStart } from '../../../../core/public';
 import { Section } from './section';
+import { AddSectionFlyout } from './add_section';
 import { Section as SectionType, SECTIONS } from '../../common';
 import { useSectionOrder as useSectionOrderLocalStorage } from '../util';
 
@@ -40,6 +41,7 @@ const useSectionOrder = (): [SectionType[], string[], Dispatch<SetStateAction<st
 
 export const NewHomeApp = ({ basename, notifications }: NewHomeAppDeps) => {
   const [sections, sectionOrder, setSectionOrder] = useSectionOrder();
+  const [isFlyoutVisible, setFlyoutVisible] = useState(false);
 
   const dismiss = (index: number) => () => {
     const tmp = [...sectionOrder];
@@ -66,7 +68,7 @@ export const NewHomeApp = ({ basename, notifications }: NewHomeAppDeps) => {
   };
 
   const addSectionHandler = () => {
-    notifications.toasts.addInfo('Add custom content section not implemented.');
+    setFlyoutVisible(true);
   };
 
   const manageButton = (
@@ -115,6 +117,14 @@ export const NewHomeApp = ({ basename, notifications }: NewHomeAppDeps) => {
           <EuiButton fullWidth iconType="plusInCircle" onClick={addSectionHandler}>
             <FormattedMessage id="newHome.addsection" defaultMessage="Add custom content section" />
           </EuiButton>
+          {isFlyoutVisible && (
+            <AddSectionFlyout
+              notifications={notifications}
+              sections={sectionOrder}
+              setFlyoutVisible={setFlyoutVisible}
+              setSections={setSectionOrder}
+            />
+          )}
         </EuiPageTemplate>
       </I18nProvider>
     </Router>

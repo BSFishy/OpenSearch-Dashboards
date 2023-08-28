@@ -42,6 +42,17 @@ export interface Section {
   categories: Category[];
 }
 
+export interface AddSection {
+  id?: string;
+  title: string;
+  description: string;
+}
+
+export interface AddSectionGroup {
+  title: string;
+  sections: AddSection[];
+}
+
 export interface SampleData {
   id: string;
   title: string;
