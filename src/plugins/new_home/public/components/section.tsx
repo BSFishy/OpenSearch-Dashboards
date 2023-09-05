@@ -1,6 +1,7 @@
 import React, { FC, useState } from 'react';
 import { i18n } from '@osd/i18n';
 import { FormattedMessage } from '@osd/i18n/react';
+import { euiThemeVars } from '@osd/ui-shared-deps/theme';
 import {
   EuiPanel,
   EuiFlexGroup,
@@ -8,6 +9,7 @@ import {
   EuiLink,
   EuiCard,
   EuiButtonIcon,
+  EuiImage,
   EuiPopover,
   EuiContextMenu,
   EuiContextMenuPanelDescriptor,
@@ -103,6 +105,24 @@ const OptionsMenu = ({
   );
 };
 
+const ImageGroup: FC<{ images: string[] }> = ({ images }) => {
+  return (
+    <EuiFlexItem grow={true}>
+      <EuiFlexGroup justifyContent="spaceAround" direction="row" wrap={true}>
+        {images.map((url, i) => (
+          <EuiFlexItem
+            key={i}
+            grow={false}
+            style={{ maxWidth: `calc(50% - ${euiThemeVars.euiSizeM} * 2)` }}
+          >
+            <EuiImage src={url} alt="Screenshot" />
+          </EuiFlexItem>
+        ))}
+      </EuiFlexGroup>
+    </EuiFlexItem>
+  );
+};
+
 export const Section: FC<Props> = ({
   notifications,
   section,
@@ -112,24 +132,33 @@ export const Section: FC<Props> = ({
   moveUp,
   moveDown,
 }) => {
-  const { title, description, docLink, categories } = section;
+  const { title, description, docLink, docLinkText } = section;
+
+  let content;
+  if (section.categories) {
+    content = section.categories.map((category, i) => (
+      <Category key={i} category={category} notifications={notifications} />
+    ));
+  } else {
+    content = <ImageGroup images={section.images} />;
+  }
 
   return (
     <EuiFlexItem>
       <EuiPanel>
         <EuiFlexGroup gutterSize="m">
-          <EuiFlexItem>
+          <EuiFlexItem style={{ maxWidth: '280px' }}>
             <EuiCard title={title} display="plain" layout="horizontal" description={description}>
               {docLink && (
                 <EuiLink href={docLink} target="_blank">
-                  <FormattedMessage id="newHome.docLink" defaultMessage="Documentation" />
+                  {docLinkText ?? (
+                    <FormattedMessage id="newHome.docLink" defaultMessage="Documentation" />
+                  )}
                 </EuiLink>
               )}
             </EuiCard>
           </EuiFlexItem>
-          {categories.map((category, i) => (
-            <Category key={i} category={category} notifications={notifications} />
-          ))}
+          {content}
           <EuiFlexItem grow={false}>
             <OptionsMenu
               first={first}

@@ -115,7 +115,7 @@ export const NewHomeApp = ({ basename, notifications }: NewHomeAppDeps) => {
           </EuiFlexGroup>
           <EuiSpacer />
           <EuiButton fullWidth iconType="plusInCircle" onClick={addSectionHandler}>
-            <FormattedMessage id="newHome.addsection" defaultMessage="Add custom content section" />
+            <FormattedMessage id="newHome.addsection" defaultMessage="Add/remove content" />
           </EuiButton>
           {isFlyoutVisible && (
             <AddSectionFlyout

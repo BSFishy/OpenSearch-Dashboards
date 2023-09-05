@@ -16,6 +16,8 @@ import {
   EuiTitle,
   EuiText,
   EuiSpacer,
+  EuiIcon,
+  EuiListGroupItemProps,
 } from '@elastic/eui';
 import {
   Category as CategoryType,
@@ -56,6 +58,11 @@ const StaticCategory = ({
     };
   } else {
     buttonProps.href = category.href;
+  }
+
+  let icon;
+  if (category.icon) {
+    icon = <EuiIcon type={category.icon} size="l" />;
   }
 
   const toggleSelected = (id: string) => () => {
@@ -160,6 +167,8 @@ const StaticCategory = ({
           title={category.title}
           description={category.description}
           footer={footerContent}
+          icon={icon}
+          image={category.image}
           textAlign="left"
         />
       </EuiFlexItem>
@@ -189,6 +198,18 @@ const ListCategory = ({
     setFavorited(tmp);
   };
 
+  const extraAction = (i: number): EuiListGroupItemProps['extraAction'] | undefined =>
+    category.favoritable
+      ? {
+          color: 'subdued',
+          iconType: favorited[i] ? 'starFilled' : 'starEmpty',
+          iconSize: 's',
+          alwaysShow: favorited[i],
+          onClick: handleFavorite(i),
+          'aria-label': 'Favorite',
+        }
+      : undefined;
+
   return (
     <EuiFlexItem>
       <EuiCard title={category.title} layout="horizontal">
@@ -200,14 +221,7 @@ const ListCategory = ({
             href: link.href,
             onClick: handleLink,
             iconType: link.iconType,
-            extraAction: {
-              color: 'subdued',
-              iconType: favorited[i] ? 'starFilled' : 'starEmpty',
-              iconSize: 's',
-              alwaysShow: favorited[i],
-              onClick: handleFavorite(i),
-              'aria-label': 'Favorite',
-            },
+            extraAction: extraAction(i),
           }))}
         />
       </EuiCard>

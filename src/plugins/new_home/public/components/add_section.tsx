@@ -35,17 +35,22 @@ export const AddSectionFlyout: FC<Props> = ({
   setSections,
   notifications,
 }) => {
-  const [selected, setSelected] = useState<string[]>([]);
+  const [selected, setSelected] = useState<string[]>(
+    sections
+      .map((id) => FLAT_SECTIONS.find((section) => section.id === id))
+      .filter(Boolean)
+      .map((section) => section!.title)
+  );
   const selectedSections = selected.map(
     (title) => FLAT_SECTIONS.find((section) => section.title === title)!
   );
-  const addableSections = selectedSections.filter((section) => !!section.id);
+  const addableSections = selectedSections.map((section) => section.id).filter(Boolean) as string[];
 
   const toggleSelect = (title: string) => () => {
     const tmp = [...selected];
     const idx = selected.indexOf(title);
     if (idx !== -1) {
-      tmp.splice(idx, 0);
+      tmp.splice(idx, 1);
     } else {
       tmp.push(title);
     }
@@ -57,7 +62,18 @@ export const AddSectionFlyout: FC<Props> = ({
 
     if (success) {
       const tmp = [...sections];
-      addableSections.forEach((section) => tmp.push(section.id!));
+      for (let i = tmp.length - 1; i >= 0; i--) {
+        if (!addableSections.includes(tmp[i])) {
+          tmp.splice(i, 1);
+        }
+      }
+
+      for (const section of addableSections) {
+        if (!tmp.includes(section)) {
+          tmp.push(section);
+        }
+      }
+
       setSections(tmp);
 
       const text =
@@ -113,7 +129,6 @@ export const AddSectionFlyout: FC<Props> = ({
                   onChange={toggleSelect(section.title)}
                   checkableType="checkbox"
                   id={section.id ?? section.title}
-                  disabled={section.id ? sections.includes(section.id) : false}
                   label={
                     <>
                       <EuiTitle size="xs">
@@ -134,15 +149,12 @@ export const AddSectionFlyout: FC<Props> = ({
         <EuiFlexGroup justifyContent="spaceBetween">
           <EuiFlexItem grow={false}>
             <EuiButtonEmpty iconType="cross" flush="left" color="danger" onClick={close(false)}>
-              <FormattedMessage id="newHome.category.flyout.cancel" defaultMessage="Cancel" />
+              <FormattedMessage id="newHome.addSection.flyout.cancel" defaultMessage="Cancel" />
             </EuiButtonEmpty>
           </EuiFlexItem>
           <EuiFlexItem grow={false}>
             <EuiButton fill onClick={close(true)}>
-              <FormattedMessage
-                id="newHome.category.flyout.submit"
-                defaultMessage="Add sample data"
-              />
+              <FormattedMessage id="newHome.addSection.flyout.submit" defaultMessage="Save" />
             </EuiButton>
           </EuiFlexItem>
         </EuiFlexGroup>

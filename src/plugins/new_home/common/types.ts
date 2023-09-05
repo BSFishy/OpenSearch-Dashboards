@@ -1,10 +1,12 @@
-import { IconType } from '@elastic/eui';
+import { IconType, ExclusiveUnion } from '@elastic/eui';
 
 export type StaticCategory = {
   type: 'static';
   title: string;
   description: string;
   button: string;
+  icon?: IconType;
+  image?: string;
 } & (FlyoutStaticCategory | LinkStaticCategory);
 
 interface FlyoutStaticCategory {
@@ -26,6 +28,7 @@ export interface ListCategory {
   type: 'list';
   title: string;
   links: ListLink[];
+  favoritable: boolean;
 }
 
 export type Category = ListCategory | StaticCategory;
@@ -34,12 +37,20 @@ export const isStaticCategory = (category: Category): category is StaticCategory
   return category.type === 'static';
 };
 
-export interface Section {
+export type Section = {
   id: string;
   title: string;
-  description: string;
+  description?: string;
   docLink?: string;
+  docLinkText?: string;
+} & ExclusiveUnion<CategorySection, ImageSection>;
+
+interface CategorySection {
   categories: Category[];
+}
+
+interface ImageSection {
+  images: string[];
 }
 
 export interface AddSection {
